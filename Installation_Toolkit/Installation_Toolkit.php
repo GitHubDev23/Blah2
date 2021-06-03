@@ -36,6 +36,24 @@
  ===========================================================================================
 */
 
+/*
+ ===========================
+ +
+ +
+ + Installation Toolit
+ +
+ +
+ ===========================
+*/
+
+/*
+ ===========================
+ +
+ + HTML HEADER
+ +
+ ===========================
+*/
+
 echo ("
 <HTML>
 		<HEAD>
@@ -43,14 +61,41 @@ echo ("
 		</HEAD>
 		
 		<BODY>
-				<CENTER>[&nbsp;<A HREF=\"?Application&61;Unpack\">Unpack Cerberus Content Management System Compressed Package</A>&nbsp;-<A HREF=\"./Cerberus/index.php\">Install Cerberus Content Management System</A>&nbsp;]</CENTER>
+				<CENTER>[&nbsp;<A HREF=\"?Application&61;Unpack\">Unpack Cerberus Content Management System Compressed Package</A>&nbsp;-<A HREF=\"./Cerberus/Install.php\">Install Cerberus Content Management System</A>&nbsp;]</CENTER>
 ");
+
+/*
+ ===========================
+ +
+ + Unpack Packages
+ +
+ ===========================
+*/
 	
 if ([$_GET["Application"] == "Unpack") {
 
 system('unzip Cerberus.zip');
 
 } // [ + ] IF_APPLICATION_UNPACK
+
+/*
+ ===========================
+ +
+ + Execute Terminal Commands
+ +
+ ===========================
+*/
+	 
+if ($_GET["Application"] == "Execute_Commands") {
+
+echo ("
+			<FORM ACTION=\"?Application&#61;Execute_Commands\" METHOD=\"POST\">
+				<TEXTAREA ROWS=\"15\" COLS=\"75\" NAME=\"InstallationToolkit_Commands\" ID=\"InstallationToolkit_Commands\">Execute Terminal Commands On Operating System E.G.: 'git clone https://github.com/TinkeSoftware/CerberusCMS_Archives/blob/master/Version%20-%204/Build%20-%200.7/Cerberus%20Content%20Management%20System%20-%20Version%20-%204%20-%20Build%20-%200.7%20-%20Edit%20Number%20-%203%20-%20Alpha%20-%20Wyn%20%7E%20Ghost.zip as 'Cerberus.zip''</TEXTAREA>
+				<INPUT TYPE=\"SUBMIT\" VALUE=\"Execute\">
+			</FORM>
+");
+
+} // [ + ] IF_APPLICATION_EXECUTE_COMMANDS
 
 echo ("
 		</BODY>
