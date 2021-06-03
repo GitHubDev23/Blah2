@@ -94,7 +94,8 @@ if (!$_Installation_ToolKit_POST_TERMINAL_COMMANDS) {
 
 echo ("
 			<FORM ACTION=\"?Application&#61;Execute_Commands\" METHOD=\"POST\">
-				<TEXTAREA ROWS=\"15\" COLS=\"75\" NAME=\"Installation_Toolkit_Terminal_Commands\">Execute Terminal Commands On Operating System From This Post-HypterText-PreProcessor Script E.G.: 'git clone https://github.com/TinkeSoftware/CerberusCMS_Archives/blob/master/Version%20-%204/Build%20-%200.7/Cerberus%20Content%20Management%20System%20-%20Version%20-%204%20-%20Build%20-%200.7%20-%20Edit%20Number%20-%203%20-%20Alpha%20-%20Wyn%20%7E%20Ghost.zip as 'Cerberus.zip''</TEXTAREA>
+				Please Visit: <A HREF=\"https://www.GitHub.com/TinkeSoftware/CerberusCMS_Archives/\">Tinke Softwares' - Cerberus Content Management System Archives - GitHub Repository</A> for the most recent CerberusCMS Version<BR>
+				<TEXTAREA ROWS=\"15\" COLS=\"75\" NAME=\"Installation_Toolkit_Terminal_Commands\">Execute Terminal Commands On Operating System From This Post-HypterText-PreProcessor Script E.G.: 'git clone https://github.com/TinkeSoftware/CerberusCMS_Archives/blob/master/Version - 4/Build - 0.7/Cerberus Content Management System - Version - 4 - Build - 0.7 - Edit Number - 5 - Final - Wynn ~ Ghost.zip as 'Cerberus.zip''</TEXTAREA><BR>
 				<INPUT TYPE=\"SUBMIT\" VALUE=\"Execute\">
 			</FORM>
 ");
