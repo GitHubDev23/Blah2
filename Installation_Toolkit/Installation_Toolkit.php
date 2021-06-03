@@ -36,20 +36,24 @@
  ===========================================================================================
 */
 
-if ([$_GET["Application"] == "Unpack") {
-
-system('unzip Cerberus.zip');
-
 echo ("
 <HTML>
 		<HEAD>
-				<TITLE>Cerberus Content Management System - Installation Toolit</TITLE>
+				<TITLE>Cerberus Content Management System - Installation Toolkit</TITLE>
 		</HEAD>
 		
 		<BODY>
 				<CENTER>[&nbsp;<A HREF=\"?Application&61;Unpack\">Unpack Cerberus Content Management System Compressed Package</A>&nbsp;-<A HREF=\"./Cerberus/index.php\">Install Cerberus Content Management System</A>&nbsp;]</CENTER>
+");
+	
+if ([$_GET["Application"] == "Unpack") {
+
+system('unzip Cerberus.zip');
+
+} // [ + ] IF_APPLICATION_UNPACK
+
+echo ("
 		</BODY>
 </HTML>
 ");
-
 ?>
