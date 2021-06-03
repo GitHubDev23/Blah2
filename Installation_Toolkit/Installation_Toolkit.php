@@ -61,7 +61,9 @@ echo ("
 		</HEAD>
 		
 		<BODY>
+				<CENTER>Cerberus Content Management System - Post Installation Toolkit</CENTER>
 				<CENTER>[&nbsp;<A HREF=\"\">Close Open Applications</A>&nbsp;-&nbsp;</A><A HREF=\"?Application&61;Unpack\">Unpack Cerberus Content Management System Compressed Package</A>&nbsp;-&nbsp;<A HREF=\"./Cerberus/Install.php\">Install Cerberus Content Management System</A>&nbsp;]</CENTER>
+				<HR>
 ");
 
 /*
