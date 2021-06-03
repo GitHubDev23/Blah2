@@ -57,11 +57,11 @@
 echo ("
 <HTML>
 		<HEAD>
-				<TITLE>Cerberus Content Management System - Installation Toolkit</TITLE>
+				<TITLE>Cerberus Content Management System - Post Installation Toolkit</TITLE>
 		</HEAD>
 		
 		<BODY>
-				<CENTER>[&nbsp;<A HREF=\"?Application&61;Unpack\">Unpack Cerberus Content Management System Compressed Package</A>&nbsp;-<A HREF=\"./Cerberus/Install.php\">Install Cerberus Content Management System</A>&nbsp;]</CENTER>
+				<CENTER>[&nbsp;<A HREF=\"\">Close Open Applications</A>&nbsp;-&nbsp;</A><A HREF=\"?Application&61;Unpack\">Unpack Cerberus Content Management System Compressed Package</A>&nbsp;-&nbsp;<A HREF=\"./Cerberus/Install.php\">Install Cerberus Content Management System</A>&nbsp;]</CENTER>
 ");
 
 /*
@@ -100,6 +100,9 @@ echo ("
 ");
 
 } else {
+	
+		echo ("Executing Terminal Command: '$_Installation_ToolKit_POST_TERMINAL_COMMANDS'<BR>");
+		exec($_Installation_ToolKit_POST_TERMINAL_COMMANDS);
 
 } // [ + ] IF_!POST_Installation_ToolKit_POST_TERMINAL_COMMANDS
 
